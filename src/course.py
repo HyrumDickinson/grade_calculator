@@ -2,8 +2,8 @@
 course
 '''
 
-from catagory import Catagory
-from statics import compute_letter_grade, compute_quality_points
+from src.catagory import Catagory
+from src.statics import compute_letter_grade, compute_quality_points
 
 
 class Course:
