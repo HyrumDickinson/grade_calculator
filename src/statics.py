@@ -41,7 +41,9 @@ def compute_letter_grade(percentage: float) -> str:
         letter_grade = "F"
     return letter_grade
 
-def compute_quality_points(letter_grade: str, credit: int) -> float:
+def compute_quality_points(
+    letter_grade: str, credit: int, quality_points: dict[str, float] = None
+) -> float:
     '''
     compute quality points
 
@@ -52,20 +54,20 @@ def compute_quality_points(letter_grade: str, credit: int) -> float:
     Returns:
         float: quality points for course
     '''
-
-    quality_points = {
-        "A": 4.0,
-        "A-": 3.7,
-        "B+": 3.3,
-        "B": 3.0,
-        "B-": 2.7,
-        "C+": 2.3,
-        "C": 2.0,
-        "C-": 1.7,
-        "D+": 1.3,
-        "D": 1.0,
-        "F": 0.0
-    }
+    if quality_points is None:
+        quality_points = {
+            "A": 4.0,
+            "A-": 3.7,
+            "B+": 3.3,
+            "B": 3.0,
+            "B-": 2.7,
+            "C+": 2.3,
+            "C": 2.0,
+            "C-": 1.7,
+            "D+": 1.3,
+            "D": 1.0,
+            "F": 0.0
+        }
 
     assert letter_grade in quality_points
 
