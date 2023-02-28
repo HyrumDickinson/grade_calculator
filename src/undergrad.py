@@ -8,26 +8,23 @@ class undergrad:
         past_semesters: list[Semester] = None,
     ):
 
+        assert isinstance(current_semester, Semester)
+        assert past_semesters is None or all(isinstance(s, Semester) for s in past_semesters)
+        
         self.current_semester = current_semester
         self.past_semesters = past_semesters
 
     def undergraduate_quality_points(self) -> float:
-        if self.past_semesters == None:
+        if self.past_semesters is None:
             return 0
 
-        quality_points = 0
-        for semester in self.past_semesters:
-            quality_points += semester.quality_points()
-        return quality_points
+        return sum(semester.quality_points() for semester in self.past_semesters)
 
     def undergraduate_credits(self) -> int:
-        if self.past_semesters == None:
+        if self.past_semesters is None:
             return 0
 
-        credits = 0
-        for semester in self.past_semesters:
-            credits += semester.credits()
-        return credits
+        return sum(semester.credits() for semester in self.past_semesters)
 
     def projected_quality_points(self) -> float:
         return self.undergraduate_quality_points() + self.current_semester.quality_points()
@@ -42,4 +39,10 @@ class undergrad:
         return self.undergraduate_quality_points() / self.undergraduate_credits()
 
     def projected_gpa(self) -> float:
-        return (self.undergraduate_quality_points() + self.projected_quality_points()) / (self.undergraduate_credits() + self.projected_credits())
+        total_quality_points = sum(
+            [self.undergraduate_quality_points(), self.current_semester.quality_points()]
+        )
+        total_credits = sum(
+            [self.undergraduate_credits(), self.current_semester.credits()]
+        )
+        return total_quality_points / total_credits
