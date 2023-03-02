@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0f00fdf-c100-4f96-a140-05fdbab72e6e" name="Changes" comment="" />
+    <list default="true" id="d0f00fdf-c100-4f96-a140-05fdbab72e6e" name="Changes" comment="pycharm additions">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/category.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/category.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/course.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/course.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/semester.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/semester.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/statics.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/statics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/undergrad.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/undergrad.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +25,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="2MQysDYwlst1BiE1aw6JQqtzcoA" />
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -24,7 +42,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/Users/hyrumdickinson/grade-calculator",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "aDefault",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -37,10 +60,24 @@
       <option name="presentableId" value="Default" />
       <updated>1677714304466</updated>
       <workItem from="1677714305527" duration="7000" />
+      <workItem from="1677715485598" duration="259000" />
+      <workItem from="1677787585730" duration="1175000" />
     </task>
+    <task id="LOCAL-00001" summary="pycharm additions">
+      <created>1677715515567</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677715515567</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="pycharm additions" />
+    <option name="LAST_COMMIT_MESSAGE" value="pycharm additions" />
   </component>
 </project>

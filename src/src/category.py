@@ -1,9 +1,10 @@
 import warnings
 
+
 # grading category
 class Category:
     def __init__(self, weight: int, assignments: int, drops: int):
-        
+
         # weight of this category in the total grade
         self.weight = weight
 

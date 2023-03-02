@@ -1,16 +1,17 @@
 from semester import Semester
 
-class undergrad:
+
+class Undergrad:
 
     def __init__(
-        self,
-        current_semester: Semester,
-        past_semesters: list[Semester] = None,
+            self,
+            current_semester: Semester,
+            past_semesters: list[Semester] = None,
     ):
 
         assert isinstance(current_semester, Semester)
         assert past_semesters is None or all(isinstance(s, Semester) for s in past_semesters)
-        
+
         self.current_semester = current_semester
         self.past_semesters = past_semesters
 
@@ -32,8 +33,8 @@ class undergrad:
     def projected_credits(self) -> int:
         return self.undergraduate_credits() + self.current_semester.credits()
 
-    def undergraduate_gpa(self) -> float:
-        if self.past_semesters == None:
+    def undergraduate_gpa(self) -> float | None:
+        if self.past_semesters is not None:
             return None
 
         return self.undergraduate_quality_points() / self.undergraduate_credits()

@@ -1,10 +1,10 @@
-'''
+"""
 statics
-'''
+"""
 
 
 def compute_letter_grade(percentage: float) -> str:
-    '''
+    """
     compute the letter grade
 
     Args:
@@ -12,7 +12,7 @@ def compute_letter_grade(percentage: float) -> str:
 
     Returns:
         str: letter grade
-    '''
+    """
     if percentage >= 97:
         letter_grade = "A+"
     elif percentage >= 93:
@@ -41,10 +41,11 @@ def compute_letter_grade(percentage: float) -> str:
         letter_grade = "F"
     return letter_grade
 
+
 def compute_quality_points(
-    letter_grade: str, credit: int, quality_points: dict[str, float] = None
+        letter_grade: str, credit: int, quality_points: dict[str, float] = None
 ) -> float:
-    '''
+    """
     compute quality points
 
     Args:
@@ -53,7 +54,10 @@ def compute_quality_points(
 
     Returns:
         float: quality points for course
-    '''
+        :param credit:
+        :param letter_grade:
+        :param quality_points:
+    """
     if quality_points is None:
         quality_points = {
             "A": 4.0,
