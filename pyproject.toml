@@ -7,19 +7,30 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "grade-calculator"
 version = "0.0.0"
+authors = [
+    { name = "Hyrum Dickinson", email = "hyrumsd2@illinois.edu" }
+]
 description = "Grade calculator using 4.0 American grading scale"
 readme = "README.md"
-authors = [{ name = "Hyrum Dickinson", email = "hyrumsd2@illinois.edu" }]
+requires-python = ">=3.11"
 license = { file = "LICENSE" }
 classifiers = [
-    "License :: OSI Approved :: MIT License",
-    "Programming Language :: Python",
     "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
 ]
-keywords = ["grade", "calculator", "gpa", "school", "college", "university", "grading"]
-dependencies = [
+keywords = [
+    "grade",
+    "calculator",
+    "gpa",
+    "school",
+    "college",
+    "university",
+    "grading"
 ]
-requires-python = ">=3.10"
+#dependencies = [
+#]
+
 
 [project.optional-dependencies]
 dev = ["flake8", "pylint", "bumpver", "isort", "pip-tools", "pytest"]
@@ -28,7 +39,7 @@ dev = ["flake8", "pylint", "bumpver", "isort", "pip-tools", "pytest"]
 Homepage = "https://github.com/HyrumDickinson/grade-calculator/"
 
 # [project.scripts]
-# new-undergrad = "grade-calculator.src.main:main"
+# new-undergrad = "grade-calculator.grade-calculator.main:main"
 
 [tool.bumpver]
 current_version = "0.0.0"
@@ -41,9 +52,6 @@ push = true
 [tool.bumpver.file_patterns]
 "pyproject.toml" = [
     'current_version = "{version}"',
-]
-"src/__init__.py" = [
-    "{version}"
 ]
 "README.md" = [
     "{version}",
