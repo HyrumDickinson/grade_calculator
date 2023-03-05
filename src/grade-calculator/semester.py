@@ -1,9 +1,9 @@
 from course import Course
 
 class Semester:
-    '''
+    """
     semester
-    '''
+    """
 
     def __init__(self, name: str):
 
@@ -16,7 +16,7 @@ class Semester:
             course_code_input = input("what's the course code?")
             assert course_code_input not in self.courses
             description_input = input("what's the course description?")
-            credit_input = input("how many credits is this course worth?")
+            credit_input = int(input("how many credits is this course worth?"))
             new_course = Course(
                 course_code=course_code_input,
                 description=description_input,
@@ -35,10 +35,10 @@ class Semester:
         return quality_points
 
     def credits(self) -> int:
-        credits = 0
+        credit_hours = 0
         for course in self.courses:
-            credits += course.credit
-        return credits
+            credit_hours += course.credit
+        return credit_hours
 
     def gpa(self) -> float:
         return self.quality_points() / self.credits()
