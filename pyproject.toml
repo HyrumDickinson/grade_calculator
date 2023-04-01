@@ -5,7 +5,7 @@ requires = ["setuptools>=61.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "grade-calculator"
+name = "grade_calculator"
 version = "0.0.0"
 authors = [
     { name = "Hyrum Dickinson", email = "hyrumsd2@illinois.edu" }
@@ -36,10 +36,10 @@ keywords = [
 dev = ["flake8", "pylint", "bumpver", "isort", "pip-tools", "pytest"]
 
 [project.urls]
-Homepage = "https://github.com/HyrumDickinson/grade-calculator/"
+Homepage = "https://github.com/HyrumDickinson/grade_calculator/"
 
 # [project.scripts]
-# new-undergrad = "grade-calculator.grade-calculator.main:main"
+# new-undergrad = "grade_calculator.grade_calculator.main:main"
 
 [tool.bumpver]
 current_version = "0.0.0"

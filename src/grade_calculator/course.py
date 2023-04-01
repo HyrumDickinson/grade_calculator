@@ -24,9 +24,11 @@ class Course:
         category_sum = 0
         while category_sum != 100:
             print(f"current categories are {self.categories}")
-            name_input = input("create a new grading category for this course, input name")
+            name_input = input("create a new grading category for this "
+                               "course, input name")
             assert name_input not in self.categories
-            weight_input = int(input("what percentage of the total grade does this category make?"))
+            weight_input = int(input("what percentage of the total grade does "
+                                     "this category make?"))
             assert category_sum + weight_input <= 100
             assignment_input = int(input("how many assignments?"))
             drops_input = int(input("how many drops?"))
